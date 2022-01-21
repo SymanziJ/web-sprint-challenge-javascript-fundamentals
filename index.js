@@ -17,12 +17,13 @@ function myFunction() {
 }
 myFunction();
 
-console.log('\n')
+
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-/* This is an example of Closure.
-A closure happens when an function is written inside of another function which reaches into the outer function to access a piece of information defined there. 
+/* 
+This is an example of closure.
+A closure happens when a function written inside of another function reaches into the outer function to access a piece of information defined there. 
 Code written in JS is built in layers of accessability called scope. Defined info can only be accessed on the same scope or from the scope of an outer layer.
 */
 
