@@ -2,6 +2,8 @@
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
 
+console.log('-------------------\n Topic #1 Closures \n-------------------\n\nTask 1:\n');
+
 const external = "I'm outside the function";
 
 function myFunction() {
@@ -14,6 +16,8 @@ function myFunction() {
   nestedFunction();
 }
 myFunction();
+
+console.log('\n')
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
@@ -32,14 +36,20 @@ Code written in JS is built in layers of accessability called scope. Defined inf
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let acc = 0;
+  for (let i = 1; i <= number; i++){
+    acc += i;
   }
- 
+  return acc;
+  }
+
+ console.log('Task 2:\n\n' + summation(4) + '\n\n');
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
+
+console.log('----------------------------------\n Topic #2 ADVANCED Array Methods \n----------------------------------');
 
 const zooAnimals = [
     { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
