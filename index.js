@@ -128,6 +128,9 @@ const zooAnimals = [
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
+
+  console.log('--------------------\n Topic #3 Callbacks \n--------------------');
+
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
     * Use the higher-order function consume with 3 parameters: a, b and cb
     * The first two parameters can take any argument (we can pass any value as an argument)
@@ -135,10 +138,12 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+    return cb(a, b);
   }
- 
+
+  console.log('\nStep 1: Create a higher-order function\n\n' + consume('Yup', ', it worked!', (string1, string2) => string1 + string2) + '\n\n');
+
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
