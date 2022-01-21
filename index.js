@@ -152,7 +152,7 @@ function add(num1, num2){
     return num1 + num2;
   }
 
-  console.log('\nStep 2: Create several functions to callback with consume()\n\n' + 'add function: 2 + 5 = ' + add(2, 5) + '\n\n');
+  console.log('\nStep 2: Create several functions to callback with consume()\n\n' + 'add function: 2 + 5 = ' + add(2, 5) + '\n');
 
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
@@ -161,7 +161,7 @@ function multiply(num1, num2){
     return num1 * num2;
   }
 
-  console.log('multiply function: 4 * 2 = ' + multiply(4, 2) + '\n\n');
+  console.log('multiply function: 4 * 2 = ' + multiply(4, 2) + '\n');
 
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
@@ -175,9 +175,14 @@ function greeting(firstName, lastName){
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-  // console.log(consume(2, 2, add)); // 4
-  // console.log(consume(10, 16, multiply)); // 160
-  // console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+   
+  console.log('\nStep 3: Check your work by un-commenting the following calls to consume()\n');
+
+  console.log(consume(2, 2, add)); // 4
+  console.log(consume(10, 16, multiply)); // 160
+  console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+
+  console.log('\n\n');
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
 //🐴🐴🐴 Task: You are to build a cuboid maker that can return values for a cuboid's volume or surface area. Cuboids are similar to cubes but do not have even sides. Follow the steps in order to accomplish this challenge. 🐴🐴🐴
